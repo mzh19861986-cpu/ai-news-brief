@@ -3,173 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI News Brief - 3分钟了解 AI 圈最新动态</title>
-    <meta name="description" content="3分钟了解 AI 圈最新动态">
-    <meta name="keywords" content="AI工具, AI推荐, AI导航, 人工智能工具大全">
+    <title>AI新闻快讯导航 - 每日最新AI新闻</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #111827; background: #fff; line-height: 1.6; }
+        body { font-family: -apple-system, sans-serif; background: #fafafa; color: #1a1a2e; line-height: 1.6; }
+        nav { background: white; padding: 1rem 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; }
+        .logo { font-weight: 700; font-size: 1.2rem; }
+        nav a { color: #666; text-decoration: none; margin-left: 1.5rem; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-        nav { padding: 1.5rem 0; border-bottom: 1px solid #e5e7eb; margin-bottom: 3rem; }
-        nav .container { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.25rem; font-weight: 700; color: #111827; text-decoration: none; }
-        .nav-links a { margin-left: 1.5rem; color: #6b7280; text-decoration: none; font-size: 0.95rem; }
-        .nav-links a:hover { color: #111827; }
         .hero { text-align: center; padding: 4rem 0 2rem; }
-        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; font-weight: 800; letter-spacing: -0.02em; }
-        .hero p { color: #6b7280; max-width: 600px; margin: 0 auto; font-size: 1.125rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; margin: 3rem 0; }
-        .card { padding: 1.75rem; border: 1px solid #e5e7eb; border-radius: 12px; transition: all 0.2s; }
-        .card:hover { border-color: #111827; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-        .card h3 { font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 600; }
-        .card .tag { display: inline-block; padding: 0.2rem 0.6rem; background: #f3f4f6; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-bottom: 0.5rem; color: #4b5563; }
-        .card p { color: #6b7280; font-size: 0.95rem; margin-bottom: 1rem; }
-        footer { padding: 3rem 0; border-top: 1px solid #e5e7eb; text-align: center; color: #9ca3af; margin-top: 4rem; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { color: #666; font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin: 3rem 0; }
+        .card { background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid #e5e7eb; transition: all 0.2s; text-decoration: none; color: #1a1a2e; }
+        .card:hover { border-color: #0066ff; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,102,255,0.1); }
+        .card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .card p { color: #666; font-size: 0.9rem; }
+        footer { text-align: center; padding: 3rem 0; color: #999; border-top: 1px solid #e5e7eb; margin-top: 4rem; }
     </style>
 </head>
 <body>
     <nav>
-        <div class="container">
-            <a href="./" class="logo">⚡ AI News Brief</a>
-            <div class="nav-links">
-                <a href="./">Home</a>
-                <a href="./about.html">关于</a>
-            </div>
+        <div class="logo">AI新闻快讯</div>
+        <div>
+            <a href="./">首页</a>
+            <a href="./about.html">关于</a>
         </div>
     </nav>
     <div class="container">
         <div class="hero">
-            <h1>⚡ AI News Brief</h1>
-            <p>3分钟了解 AI 圈最新动态</p>
+            <h1>每日AI新闻快讯</h1>
+            <p>最新AI行业动态、公司新闻、融资信息</p>
         </div>
         <div class="grid">
-            <div class="card">
-                <h3>Hacker News</h3>
-                <div>
-                    <span class="tag">技术</span>
-                    <span class="tag">极客</span>
-                </div>
-                <p>极客圈AI新闻，技术人必看</p>
-            </div>
-            <div class="card">
-                <h3>Ars Technica AI</h3>
-                <div>
-                    <span class="tag">深度</span>
-                    <span class="tag">媒体</span>
-                </div>
-                <p>科技媒体AI板块，深度报道</p>
-            </div>
-            <div class="card">
-                <h3>The Batch</h3>
-                <div>
-                    <span class="tag">周报</span>
-                    <span class="tag">吴恩达</span>
-                </div>
-                <p>DeepLearning.AI周报，吴恩达出品</p>
-            </div>
-            <div class="card">
-                <h3>AI News</h3>
-                <div>
-                    <span class="tag">新闻</span>
-                    <span class="tag">每日更新</span>
-                </div>
-                <p>专门的AI新闻网站，更新快</p>
-            </div>
-            <div class="card">
-                <h3>Twitter AI</h3>
-                <div>
-                    <span class="tag">社交</span>
-                    <span class="tag">快</span>
-                </div>
-                <p>关注AI大佬，第一时间知道消息</p>
-            </div>
-            <div class="card">
-                <h3>Reddit r/MachineLearning</h3>
-                <div>
-                    <span class="tag">社区</span>
-                    <span class="tag">讨论</span>
-                </div>
-                <p>机器学习社区，讨论深入</p>
-            </div>
-            <div class="card">
-                <h3>TechCrunch AI</h3>
-                <div>
-                    <span class="tag">融资</span>
-                    <span class="tag">创业</span>
-                </div>
-                <p>科技媒体AI板块，融资新闻多</p>
-            </div>
-            <div class="card">
-                <h3>The Verge AI</h3>
-                <div>
-                    <span class="tag">产品</span>
-                    <span class="tag">评测</span>
-                </div>
-                <p>科技媒体AI板块，产品评测多</p>
-            </div>
-            <div class="card">
-                <h3>VentureBeat AI</h3>
-                <div>
-                    <span class="tag">企业</span>
-                    <span class="tag">B端</span>
-                </div>
-                <p>企业AI新闻，B端动态多</p>
-            </div>
-            <div class="card">
-                <h3>MIT Technology Review</h3>
-                <div>
-                    <span class="tag">深度</span>
-                    <span class="tag">MIT</span>
-                </div>
-                <p>MIT科技评论，深度分析</p>
-            </div>
-            <div class="card">
-                <h3>Import AI</h3>
-                <div>
-                    <span class="tag">AI安全</span>
-                    <span class="tag">政策</span>
-                </div>
-                <p>AI安全周报，聚焦风险和政策</p>
-            </div>
-            <div class="card">
-                <h3>Ben's Bites</h3>
-                <div>
-                    <span class="tag">简报</span>
-                    <span class="tag">邮件</span>
-                </div>
-                <p>每日AI新闻简报，邮件订阅</p>
-            </div>
-            <div class="card">
-                <h3>TLDR AI</h3>
-                <div>
-                    <span class="tag">Newsletter</span>
-                    <span class="tag">5分钟</span>
-                </div>
-                <p>TLDR Newsletter的AI版，5分钟读完</p>
-            </div>
-            <div class="card">
-                <h3>AI Breakfast</h3>
-                <div>
-                    <span class="tag">早报</span>
-                    <span class="tag">咖啡</span>
-                </div>
-                <p>每天早上一杯咖啡的时间看AI新闻</p>
-            </div>
-            <div class="card">
-                <h3>Neuron</h3>
-                <div>
-                    <span class="tag">论文解读</span>
-                    <span class="tag">通俗</span>
-                </div>
-                <p>AI论文解读，把论文翻译成大白话</p>
-            </div>
-
+            <a href="latest-ai-news.html" class="card"><h3>最新AI新闻</h3><p>每日最新AI行业新闻汇总</p></a>
+            <a href="openai-updates.html" class="card"><h3>OpenAI动态</h3><p>OpenAI最新产品和更新</p></a>
+            <a href="google-ai.html" class="card"><h3>Google AI</h3><p>Google DeepMind和Gemini动态</p></a>
+            <a href="anthropic.html" class="card"><h3>Anthropic动态</h3><p>Claude母公司最新消息</p></a>
+            <a href="meta-ai.html" class="card"><h3>Meta AI</h3><p>Meta Llama系列AI动态</p></a>
+            <a href="microsoft-ai.html" class="card"><h3>微软AI</h3><p>微软Copilot和Azure AI动态</p></a>
+            <a href="amazon-ai.html" class="card"><h3>亚马逊AI</h3><p>亚马逊AWS AI最新动态</p></a>
+            <a href="apple-ai.html" class="card"><h3>苹果AI</h3><p>Apple Intelligence苹果AI动态</p></a>
+            <a href="china-ai.html" class="card"><h3>中国AI</h3><p>国内大模型和AI公司动态</p></a>
+            <a href="ai-funding-news.html" class="card"><h3>AI融资新闻</h3><p>AI公司融资和并购信息</p></a>
         </div>
     </div>
     <footer>
-        <div class="container">
-            <p>© 2026 AI News Brief - 精选 AI 工具与资源</p>
-        </div>
+        <p>© 2026 AI新闻快讯</p>
     </footer>
 </body>
 </html>
